@@ -2,6 +2,7 @@
 
 void ofxResolume::setupResolume(string ipRes,int portRes){//Setup for OSC Resolume sender
 		resSender.setup(ipRes, portRes);
+		//Prueba
 }
 
 void ofxResolume::rotateVideo(float rotateX,float rotateY,string layer, string clip){
