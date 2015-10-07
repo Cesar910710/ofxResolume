@@ -29,4 +29,13 @@ void ofxResolume::show(int layer, int clip){
 
 }
 
+void ofxResolume::fragment(int layer,int input){
+//OSC route	
+//layer1/video/effect1/param1/values (Float 0.0 - 1.0)
+		ofxOscMessage mr;
+		mr.setAddress("/layer"+ofToString(layer)+"/video/effect1/param1/values");
+		mr.addFloatArg(ofMap(ofToFloat(ofToString(input)),0.0,1024.0,0.0,1.0));//remap the input(mouseX)
+		resSender.sendMessage(mr);
+
+}
 

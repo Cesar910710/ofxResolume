@@ -12,7 +12,7 @@
 
 
 class ofxResolume{
-	
+
 
 public:
 
@@ -23,7 +23,7 @@ public:
 	void show(int layer,int clip);//show a video(COMING)
 	void videoOff(int layer, int clip);//COMING
 	void rotateVideo(float rotateX,float rotateY,string layer, string clip);//rotate videoclips
-
+	void fragment(int layer,int input);//Fragment effect
 
 	ofxOscSender resSender;//OSC Sender and Resolume OSC sender
 
